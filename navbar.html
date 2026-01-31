@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Navigation bar Variations</title>
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 20px;
+        padding: 20px;
+        background-color: black;
+        color: white;
+    }
+    .nav-container{
+        margin-bottom: 40px;
+
+    }
+    h2{
+        margin-bottom: 10px;
+
+    }
+    .nav1{
+        background-color: white;
+        padding : 10px;
+
+    }
+    .nav1 ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display:flex;
+        justify-content: space-around;
+
+
+    }
+    .nav1 li{
+        display: inline;
+
+    }
+    .nav1 a{
+        text-decoration: none;
+        color: black;
+        background-color: orangered;
+        padding: 5px 15px;
+        position: relative;
+        
+    }
+
+    .nav1 a::after{
+        content: "abc";
+        position: absolute;
+        height: 2px;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        background_color: blue;
+        transform: scaleX(0);
+        ease-in-out;
+
+    }
+    .nav1 a:hover::after{
+        transform: scale(1)
+
+    }
+    .nav1 .login-btn{
+        background-color: dodgerblue;
+    
+    }
+
+    
+</style>
+
+
+</head>
+
+<body>
+<div class="nav-container">
+<h2>Variation 1: Horizontal with underline effect</h2>
+<nav class="menu1">
+<ul>
+  <li><a href="#">Home</a></li>
+  <li><a href="#">About</a></li>
+  <li><a href="#">Products</a></li>
+  <li><button>Login</button></li>
+</ul>
+</nav>
+</div>
+</body>
+</html>
+
+<br><br>
+
+<h2>Variation 2: Vertical with hover effect</h2>
+<div class="menu2">
+  <li><a href="#">Home</a></li>
+  <li><a href="#">About</a></li>
+  <li><a href="#">Products</a></li>
+
+</div>
+
+<button>Login</button>
+
+<br><br>
+
+<h2>Variation 3: Horizontal with dropdown</h2>
+<div class="menu3">
+  <li><a href="#">Home</a></li>
+
+  <li>
+    <a href="#">About</a>
+    <nav class="dropdown">
+      <li><a href="#">Our Story</a></li>
+      <li><a href="#">Team</a></li>
+      <li><a href="#">Contact</a></li>
+    </nav>
+  </li>
+
+  <li><a href="#">Products</a></li>
+  <li><button>Login</button></li>
+</div>
+
+</body>
+</html>
